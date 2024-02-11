@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="/assets/img/photo1.jpg" type="image/x-icon">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Parallax Photography Website - Michael Ogundipe</title>
+
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="parallax-container">
+      <img src="/assets/img/photo2.jpg" alt="Home Image">
+      <div class="parallax-content">
+        <h1 id="title">MIP</h1>
+      </div>
+    </div>
+
+    <div class="parallax-section">
+      <p>At MI Photography, we believe in capturing moments that transcend time. Established with a passion for visual storytelling, our photography studio is dedicated to freezing the magic of life in every frame.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="parallax-container">
+      <img src="/assets/img/photo1.jpg" alt="Home Image">
+      <!-- <div class="parallax-content-2">
+        <h2>Amazing Photos Await</h2>
+        <p>Scroll down to explore</p>
+      </div> -->
+    </div>
+
+    <div class="parallax-section-2">
+      <h3>Our Commitment</h3>
+      <p>Committed to excellence, our dedicated team of photographers combines technical expertise with artistic vision to deliver stunning images that exceed expectations. Whether it's a special event, portrait session, or commercial project, we bring creativity and professionalism to every photo we capture.</p>
+
+      <h3>Why Choose MI Photography?</h3>
+      <p>1. <strong>Creative Approach</strong>: We approach every project with a fresh and creative perspective, ensuring your photos are unique and memorable.</p>
+      <p>2. <strong>Professionalism</strong>: Our team is committed to delivering a professional and enjoyable experience, making your photo session stress-free and fun.</p>
+      <p>3. <strong>High-Quality Results</strong>: We use top-of-the-line equipment and editing techniques to provide high-quality, visually stunning photographs.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="parallax-container">
+      <img src="/assets/img/photo4.jpg" alt="Home Image">
+      <div class="parallax-content-3">
+        <h2>Our Photography Services</h2>
+        <p>Explore our diverse range of photography services designed to capture the essence of every moment.</p>
+      </div>
+    </div>
+
+    <div class="parallax-section-3">
+      <h3>What We Offer</h3>
+      <p>We take pride in providing high-quality photography services tailored to your needs. Our offerings include:</p>
+      <ul>
+        <li>Wedding Photography</li>
+        <li>Portrait Photography</li>
+        <li>Event Coverage</li>
+        <li>Product Photography</li>
+        <!-- Add more services as needed -->
+    </ul>
+    </div>
+  </section>
+
+  <!-- <footer id="footer">
+      <div class="parallax-footer" style="background-image: url('/assets/img/photo3.jpg');">
+        <div class="parallax-content-2">
+          <h2>Amazing Photos Await</h2>
+          <p>Scroll down to explore</p>
+        </div>
+      </div>
+  
+      <div class="parallax-section-footer">
+        <p>Section 2 Content</p>
+      </div>
+    </section>
+  </footer> -->
+
+  <!-- Add more sections as needed -->
+
+  <script>
+
+    var title = document.getElementById("title");
+        
+    document.addEventListener("scroll", (event) => {
+
+        var positionY = window.scrollY;
+
+        title.style.fontSize = `${100 + positionY * 0.5}px`;
+
+    });
+
+  </script>
+</body>
+
+</html>
